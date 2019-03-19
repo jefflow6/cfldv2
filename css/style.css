@@ -1,0 +1,855 @@
+/* BLUE COLOR #6e73f2
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+h1 {
+    color: #4d4d4d;
+    text-align: center;
+}
+
+
+/*------------*/
+/* REUSABLE COMPONENTS */
+/*--------------*/
+
+
+
+.indent {
+    text-indent: 70px;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 600px;
+
+}
+
+input,
+textarea {
+
+    /* To give the same size to all text fields */
+    border: 1px solid #999;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+}
+
+textarea {
+    /* To give enough room to type some text */
+    height: 5em;
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+
+}
+
+.submit {
+    background-color: #4b51f5;
+    color: #fff;
+
+}
+
+
+
+/*-----HEADING-----*/
+
+
+
+/* HEADER */
+
+header {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(132, 132, 132, 0.44), rgba(0, 0, 0, 0.7)), url(images/officeview.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+
+
+}
+
+.cfld-name {
+    margin-bottom: 4px;
+    padding: 2;
+
+}
+
+
+
+/*-----main-nav-----*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 130%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #4b51f5;
+
+
+}
+
+/*------index page----*/
+
+.cfld-title {}
+
+.cfld-title p {
+
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.intro {
+
+    background-color: #fff;
+
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.cfld-name {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 90px;
+    width: 70%;
+
+
+}
+
+.mission {
+    color: ;
+    background-color: ;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.about-us {
+    color: aliceblue;
+    background-color: #5893d4;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+
+.about-us p {
+    padding: 8px;
+}
+
+.doctors-names li {
+    float: left;
+    list-style: none;
+    padding: 7px 60px;
+    text-align: center;
+}
+
+.doctors-names a {
+    color: #4d4d4d;
+
+}
+
+
+.breath img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 400px;
+}
+
+.breath {
+    border: 2px;
+    padding: 0px 5px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ins-title {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.ins-section {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ins-list {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.ins-list img {
+    float: left;
+    display: block;
+    width: 200px;
+
+}
+
+.appt-title {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.form-section {
+    background-color: #0075f6;
+}
+
+.appt-form {
+    width: 500px;
+    border-style: solid;
+    outline: none;
+    color: #0075f6;
+    font-size: 5px;
+    margin-bottom: 16px;
+    background-color: #0075f6;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+
+
+.contact-title {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+
+}
+
+.contact-color {
+    background-color: #5893d4;
+    ;
+}
+
+/*-----Doctors Page------- */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+
+
+
+.doctors {
+    background-color: rgba(255, 255, 255, 0.94);
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.doctor-list {
+    background-color: #fff;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+
+.doctor-list li {
+    display: block;
+    padding: 5px;
+    margin-left: 5px;
+    padding-bottom: 25px;
+}
+
+.doctors img {
+    padding: 5px;
+    display: inline-block;
+    width: 200px
+}
+
+.doctor-list p {
+    padding: 10px;
+
+}
+
+.cfld-title {
+    padding-top: 20px;
+    margin-right: 100px;
+
+    margin-left: 100px;
+
+    font-size: 30px;
+}
+
+.cfld-title img {
+    width: 150px;
+    display: inline-block;
+    float: left;
+}
+
+.cfld-title h3 {
+    text-align: center;
+
+}
+
+.staff {
+
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+.staff-manager {
+    text-align: center;
+    padding: 20px;
+
+
+
+}
+
+.staff-manager img {
+    width: 400px;
+    height: 200px;
+
+
+
+
+}
+
+.staff img {}
+
+
+
+.staff-title {
+    text-align: center;
+}
+
+/*------Services----*/
+.title-services {
+    color: #fff;
+    background-color: #5893d4;
+
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: px;
+    font-size: 40px;
+}
+
+.section-meals {
+    background-color: #5893d4;
+    ;
+    padding: 10px;
+    margin-top: px;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 2px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.meal-photo {
+    width: 100%;
+    margin-left: 0px;
+    overflow: hidden;
+    background-color: ;
+
+
+}
+
+.meal-photo i {
+    color: aliceblue;
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.meal-photo img {
+
+    width: 100%;
+    height: 176px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+
+.meal-photo i:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    color: red;
+}
+
+
+/*-----Contact page-----*/
+.app-form {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.contact h1 {
+    font-size: 200%;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.contact button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.new-pt {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.contact-section {
+
+    background-color: #5893d4;
+}
+
+.burbank-list {
+    margin-top: 20px;
+    list-style: none;
+    margin-left: 150px;
+    float: left;
+}
+
+
+
+.glendale-list {
+    margin-top: 10px;
+    list-style: none;
+    margin-left: 70px;
+    padding-bottom: 5px;
+    float: right;
+    padding-right: 100px;
+}
+
+
+/*-----Hakimi page------- */
+
+.hak-intro {
+    text-align: justify;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 350px;
+}
+
+.hak-info {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 180px;
+    ;
+    margin-left: 180px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: justify;
+    text-align: center;
+}
+
+.hakim-sleep-img {
+    margin-left: 160px;
+    margin-right: 100px;
+}
+
+.hakim-sleep-img img {
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+    padding: 15px;
+
+}
+
+.sleep-hak {
+    float: left;
+    padding: 15px;
+}
+
+.hak-title {
+
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+
+/*-----Taback page------- */
+.taback-pic {
+    float: left;
+    padding: 15px;
+}
+
+.taback-intro {
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 180px;
+
+}
+
+.pulmonary-pic {
+
+    margin-left: 400px;
+    margin-right: 300px;
+}
+
+
+.taback-info {
+    line-height: 30px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 20px;
+
+}
+
+.taback-intro img {
+    float: left;
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*-----Soly page------- */
+.soly-pic {
+    width: 300px;
+    float: left;
+    padding: 15px;
+
+}
+
+.soly-intro {
+    line-height: 30px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.soly-intro img {
+    height: 300px;
+    width: 400px;
+    margin-left: 520px;
+
+}
+
+.img-2 {
+    float: right;
+    width: 400px;
+    height: 300px;
+}
+
+.asthma {
+    line-height: 30px;
+
+    text-align: justify;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+}
+
+.asthma img {
+    padding: 20px;
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+
+.asthma p {
+    padding-top: 100px;
+}
+
+.soly-intro h3 {
+    padding: 8px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.soly-treatment {
+    line-height: 30px;
+
+    text-align: justify;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.soly-treatment img {
+    float: left;
+    height: 200px;
+    padding-right: 25px;
+    width: 300px;
+    margin-bottom: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*-----Dr Anand-----*/
+.anand-pic {
+    width: 300px;
+    float: left;
+    padding: 15px;
+
+}
+
+.anand-intro {
+    line-height: 30px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.anand-info {
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+}
+
+.anand-info h3 {
+    text-align: center;
+
+}
+
+.anand-info img {
+    padding: 20px;
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+
+.anand-sleep {
+    line-height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+}
+
+.sleep-effect img {
+    height: 400px;
+
+    width: 500px;
+}
+
+
+.anand-copd {
+    line-height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+
+}
+
+.anand-copd p {
+    padding-top: 60px;
+    text-align: center;
+    padding-right: 150px;
+
+}
+
+.anand-copd img {
+    padding: 20px;
+    height: 300px;
+    float: left;
+    width: 400px;
+}
+
+/*----Our Services---*/
+.pft-test {
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+}
+
+.pft-test img {
+    float: left;
+    height: 300px;
+    padding: 15px;
+    width: 400px;
+}
+
+.pft-test p {
+    padding-top: 50px;
+}
+
+.pre-post-test {
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-left: 80px;
+}
+
+.pre-post-test img {
+    float: left;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+.pre-post-test p {
+    padding-top: 50px;
+}
+
+/*-----FOOTER-----*/
+
+footer {
+    float: none;
+    width: 100%;
+    background-color: #5893d4;
+
+    padding: 25px;
+    font-size: 80%;
+    display: inline-block;
+    margin-top: 1%;
+
+}
+
+
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 10px;
+}
