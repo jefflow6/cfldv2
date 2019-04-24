@@ -99,7 +99,7 @@ textarea {
 
 header {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(132, 132, 132, 0.44), rgba(0, 0, 0, 0.7)), url("https://github.com/jefflow6/cfldv2/master/images/officeview.jpg");
+    background-image: linear-gradient(rgba(132, 132, 132, 0.44), rgba(0, 0, 0, 0.7)), url("https://github.com/jefflow6/cfldv2/tree/master/images/officeview.jpg");
     background-position: center;
     background-size: cover;
     height: 50vh;
