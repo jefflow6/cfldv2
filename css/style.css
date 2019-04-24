@@ -40,10 +40,17 @@ h1 {
 }
 
 
+
 /*------------*/
 /* REUSABLE COMPONENTS */
 /*--------------*/
 
+.doctor-flex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+
+}
 
 
 .indent {
@@ -92,7 +99,7 @@ textarea {
 
 header {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(132, 132, 132, 0.44), rgba(0, 0, 0, 0.7)), url("https://jefflow6.github.io/cfldv2/images/officeview.JPG");
+    background-image: linear-gradient(rgba(132, 132, 132, 0.44), rgba(0, 0, 0, 0.7)), url(images/officeview.jpg);
     background-position: center;
     background-size: cover;
     height: 50vh;
@@ -147,15 +154,33 @@ header {
     50px;
     text-align: center;
     font-size: 30px;
-
-
 }
+
 
 .cfld-title p {
 
     font-size: 18px;
     text-align: center;
 
+}
+
+@media(max-width: 600px) {
+    .cfld-title img {
+        width: 50px;
+        height: 100px;
+    }
+
+    .cfld-title h2 {
+        font-size: 30px;
+    }
+
+    .cfld-title h3 {
+        font-size: 28px;
+    }
+
+    .cfld-title p {
+        font-size: 20px;
+    }
 }
 
 .intro {
@@ -179,48 +204,50 @@ header {
 }
 
 .mission {
-    font-size: 25px;
+    font-size: 30px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 25px;
-    padding-top: 20px;
+    padding: 20px 60px;
     text-align: center;
+
 }
 
 .about-us {
     color: aliceblue;
     background-color: #5893d4;
     text-align: center;
-    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 20px;
+    font-size: 28px;
 }
 
 .about-us p {
-    padding: 8px;
+    padding: 8px 30px;
 }
 
 .doctors-names {
-    margin-left: 20px;
-    padding: 10px 30px;
+    margin-left: 2px;
+    padding: 10px 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     justify-content: space-between;
+    flex-direction: row;
     font-size: 25px;
 
 }
 
-.doctors-names li {
-    flex-direction: row;
-    list-style: none;
-
-
+@media (max-width: 1000px) {
+    .doctors-names h4 {
+        font-size: 13px;
+        padding: 8px;
+    }
 }
+
 
 .doctors-names a {
     color: #4d4d4d;
+    text-decoration: none;
 
 }
 
@@ -230,6 +257,13 @@ header {
     border-radius: 8px;
     width: 100%;
     background-size: cover;
+}
+
+@media(max-width: 600px) {
+    .breath img {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 .breath {
@@ -254,11 +288,19 @@ header {
     margin-right: auto;
 }
 
+@media(max-width: 600px) {
+    .ins-section {
+        font-size: 10px;
+    }
+
+}
+
 .ins-list {
     list-style: none;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
+    font-size: 28px;
 }
 
 .ins-list img {
@@ -316,8 +358,17 @@ header {
     padding-left: 20px;
 }
 
+.column img {
+    border-radius: 8px;
+}
 
+.drhakimg img {
+    width: 201px;
+}
 
+.drtabackimg img {
+    width: 160px;
+}
 
 .doctors {
     background-color: rgba(255, 255, 255, 0.94);
@@ -431,7 +482,7 @@ header {
     display: block;
     float: left;
     width: 20%;
-    padding: 2px;
+    padding: px;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -449,17 +500,10 @@ header {
     color: aliceblue;
     padding: 0px 10px;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
 }
 
-.meal-photo img {
 
-    width: 100%;
-    height: 176px;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
-
-}
 
 .meal-photo i:hover {
     opacity: 1;
@@ -476,7 +520,7 @@ header {
     outline: none;
     border-bottom: 1px solid gray;
     color: #fff;
-    font-size: 18px;
+    font-size: 8px;
     margin-bottom: 16px;
 }
 
@@ -520,17 +564,38 @@ header {
 }
 
 .burbank-list {
-    display: flex;
-    flex-direction: row;
     font-size: 28px;
     padding: 8px 70px;
 
 }
 
+.burbank-list iframe {
+    float: left;
+}
+
 .burbank-list p {
-    background-color:;
+    background-color: ;
     text-align: center;
     padding: 8px 50px;
+}
+
+@media(max-width: 600px) {
+    .burbank-list p {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .burbank-list img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .burbank-list iframe {
+        width: 300px;
+        height: 200px;
+        padding-bottom: 20px;
+    }
+
 }
 
 
@@ -538,14 +603,13 @@ header {
 
 
 .glendale-list {
+
     font-size: 28px;
-    display: flex;
-    flex-direction: row;
     padding: 8px 70px;
 }
 
 .glendale-list p {
-    background-color:;
+    background-color: ;
     text-align: center;
     padding: 8px 50px;
 }
@@ -556,184 +620,123 @@ header {
 
 /*-----Hakimi page------- */
 
+.haki-flex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+
+
+}
+
+.haki-flex img {
+    border-radius: 20px;
+}
+
 .hak-intro {
-    text-align: justify;
     line-height: 30px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 20px;
-    margin-right: 80px;
-    margin-left: 350px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.hak-info {
+.hak-treatment {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+.hak-treatment li {
+    padding: 10px 40px;
     font-size: 20px;
-    line-height: 30px;
-    margin-right: 180px;
-    ;
-    margin-left: 180px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    text-align: justify;
-    text-align: center;
-}
-
-.hakim-sleep-img {
-    margin-left: 160px;
-    margin-right: 100px;
-}
-
-.hakim-sleep-img img {
-    margin-right: auto;
-    margin-left: auto;
-    float: left;
-    padding: 15px;
 
 }
 
-.sleep-hak {
-    float: left;
-    padding: 15px;
-}
+
 
 .hak-title {
-
     padding-top: 8px;
     padding-bottom: 10px;
 }
 
 
 /*-----Taback page------- */
-.taback-pic {
-    float: left;
-    padding: 15px;
+
+
+
+.taback-flex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+
 }
+
 
 .taback-intro {
     line-height: 30px;
-    text-align: justify;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 20px;
-    margin-right: 80px;
-    margin-left: 180px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.taback-flex img {
+    border-radius: 10px;
 
 }
 
-.pulmonary-pic {
+.taback-treatment {
 
-    margin-left: 400px;
-    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-bottom: 10px;
 }
 
-
-.taback-info {
-    line-height: 30px;
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 5px;
+.taback-treatment li {
+    padding: 10px 40px;
     font-size: 20px;
-    margin-right: 80px;
-    margin-left: 20px;
-
 }
-
-.taback-intro img {
-    float: left;
-    width: 400px;
-    height: 300px;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 
 /*-----Soly page------- */
-.soly-pic {
-    width: 300px;
-    float: left;
-    padding: 15px;
 
+.soly-flex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.soly-flex img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.soly-treatment {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.soly-treatment li {
+    padding: 10px 40px;
+    font-size: 20px;
 }
 
 .soly-intro {
     line-height: 30px;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 40px;
     font-size: 20px;
-    margin-right: 80px;
-    margin-left: 80px;
-
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.soly-intro img {
-    height: 300px;
-    width: 400px;
-    margin-left: 520px;
-
-}
-
-.img-2 {
-    float: right;
-    width: 400px;
-    height: 300px;
-}
-
-.asthma {
-    line-height: 30px;
-
-    text-align: justify;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    margin-right: 180px;
-    margin-left: 80px;
-}
-
-.asthma img {
-    padding: 20px;
-    float: left;
-    height: 300px;
-    width: 400px;
-}
-
-.asthma p {
-    padding-top: 100px;
-}
-
-.soly-intro h3 {
-    padding: 8px;
-    text-align: center;
-    font-size: 40px;
-}
-
-.soly-treatment {
-    line-height: 30px;
-
-    text-align: justify;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    margin-right: 180px;
-    margin-left: 80px;
-    margin-top: 20px;
-}
-
-.soly-treatment img {
-    float: left;
-    height: 200px;
-    padding-right: 25px;
-    width: 300px;
-    margin-bottom: 100px;
-}
 
 .clearfix::after {
     content: "";
@@ -742,85 +745,39 @@ header {
 }
 
 /*-----Dr Anand-----*/
-.anand-pic {
-    width: 300px;
-    float: left;
-    padding: 15px;
-
+.anand-flex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 30px;
 }
 
 .anand-intro {
     line-height: 30px;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-top: 28px;
+    padding-bottom: 4px;
     font-size: 20px;
-    margin-right: 80px;
-    margin-left: 80px;
-
-}
-
-.anand-info {
-    line-height: 30px;
-    text-align: justify;
-    padding-top: 30px;
-    padding-bottom: 150px;
-    font-size: 20px;
-    margin-right: 180px;
-    margin-left: 80px;
-}
-
-.anand-info h3 {
-    text-align: center;
-
-}
-
-.anand-info img {
-    padding: 20px;
-    float: left;
-    height: 300px;
-    width: 400px;
-}
-
-.anand-sleep {
-    line-height: 30px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    margin-right: 180px;
-    margin-left: 80px;
-}
-
-.sleep-effect img {
-    height: 400px;
-
-    width: 500px;
-}
-
-
-.anand-copd {
-    line-height: 30px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    font-size: 20px;
-
-}
-
-.anand-copd p {
-    padding-top: 60px;
-    text-align: center;
+    padding-left: 90px;
     padding-right: 150px;
 
 }
 
-.anand-copd img {
-    padding: 20px;
-    height: 300px;
+.anand-pic {
     float: left;
-    width: 400px;
+    padding: 20px 70px 150px 30px;
+
 }
+
+.anand-treatment {
+    padding: 10px 0px 30px 50px;
+}
+
+.anand-treatment li {
+    padding: 2px 10px 10px 20px;
+}
+
+
+
 
 /*----Our Services---*/
 .pft-test {
